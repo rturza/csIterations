@@ -10,21 +10,36 @@ namespace csIterations
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i <= 10; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
-            }
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
 
-            for (int i = 10; i >= 1; i--)
+            //for (int i = 10; i >= 1; i--)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+            //for each basics:
+
+            var name = "John Wick";
+
+            for (int i = 0; i < name.Length; i++)
             {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
+                Console.WriteLine(name[i]);
+            }
+            Console.WriteLine("Using foreach:");
+            foreach(var character in name)
+            {
+                Console.WriteLine(character);
             }
         }
+
     }
 }
