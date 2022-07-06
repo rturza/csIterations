@@ -55,11 +55,19 @@ namespace csIterations
                 Console.Write("Type your name: ");
                 var input = Console.ReadLine();
 
-                if (String.IsNullOrWhiteSpace(input))
+                //if (String.IsNullOrWhiteSpace(input))
+                //{
+                //    break;
+                //}
+                //Console.WriteLine("@Echo: "+input);
+
+                //trying in a different way:
+                if (!String.IsNullOrWhiteSpace(input))
                 {
-                    break;
+                    Console.WriteLine("@Echo: " + input);
+                    continue;
                 }
-                Console.WriteLine("@Echo: "+input);
+                break;
             }
         }
 
